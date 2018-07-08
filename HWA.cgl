@@ -1,0 +1,106 @@
+Error 00024. 0x350010 (Thread 0x0138):
+Resource type mismatch: a(n) object was expected.
+delete(0x01056B2C) 
+
+Call Tree:
+   0x00406E4E(=HWA.exe:0x01:005E4E)
+   0x0045EA83(=HWA.exe:0x01:05DA83)
+   0x00467F7A(=HWA.exe:0x01:066F7A)
+   0x7943438B(=KERNEL32.DLL:0x01:00338B)
+
+The object array (0x01056B2C) [size: 7 bytes] was created with new[]
+Call Tree:
+   0x00406DBF(=HWA.exe:0x01:005DBF)
+   0x0045EA83(=HWA.exe:0x01:05DA83)
+   0x00467F7A(=HWA.exe:0x01:066F7A)
+   0x7943438B(=KERNEL32.DLL:0x01:00338B)
+
+------------------------------------------
+Error 00025. 0x350010 (Thread 0x0138):
+Resource type mismatch: a(n) object was expected.
+delete(0x01056B38) 
+
+Call Tree:
+   0x00406F20(=HWA.exe:0x01:005F20)
+   0x0045EA83(=HWA.exe:0x01:05DA83)
+   0x00467F7A(=HWA.exe:0x01:066F7A)
+   0x7943438B(=KERNEL32.DLL:0x01:00338B)
+
+The object array (0x01056B38) [size: 2 bytes] was created with new[]
+Call Tree:
+   0x00406E91(=HWA.exe:0x01:005E91)
+   0x0045EA83(=HWA.exe:0x01:05DA83)
+   0x00467F7A(=HWA.exe:0x01:066F7A)
+   0x7943438B(=KERNEL32.DLL:0x01:00338B)
+
+------------------------------------------
+Error 00026. 0x130500 (Thread 0x0138):
+Access overrun: Attempt to access 37 byte(s) at 0x0132FC58, that is at local
+ block 0x0132FC58(=[ebp-0x328] @HWA.exe:0x01:008938) which is only 28 bytes
+ long.
+strcat(0x0132FC58, 0x013A3238 ["test1.bmp"]) 
+
+Call Tree:
+   0x00409938(=HWA.exe:0x01:008938)
+   0x0045EA83(=HWA.exe:0x01:05DA83)
+   0x00467F7A(=HWA.exe:0x01:066F7A)
+   0x7943438B(=KERNEL32.DLL:0x01:00338B)
+
+------------------------------------------
+Functions called:
+ fflush (4 times)
+ lseek (3 times)
+ fprintf (37 times)
+ strcat (1 times)
+ pow (460800 times)
+ sin (151552 times)
+ memset (2 times)
+ cos (4096 times)
+ atof (524288 times)
+ delete (25 times)
+ fclose (2 times)
+ fscanf (37 times)
+ fopen (2 times)
+ SysReallocMem (29 times)
+ SysFreeMem (4177 times)
+ SysGetMem (4179 times)
+ delete[] (17150 times)
+ strchr (1572866 times)
+ strstr (1 times)
+ free (17 times)
+ _lsetlocale (3 times)
+ new[] (17161 times)
+ new (27 times)
+ lstrlenA (1 times)
+ lstrcpyA (4 times)
+ calloc (4 times)
+ strlen (67 times)
+ realloc (1 times)
+ strdup (3 times)
+ malloc (9 times)
+ memcpy (5 times)
+Resource types used:
+ object array (17161 allocs, 700 max)
+ object (27 allocs, 21 max)
+ memory block (4196 allocs, 771 max)
+ file stream (2 allocs, 1 max)
+ file handle (2 allocs, 1 max)
+Modules used:
+ 00400000 04/13/2005 14:25:38 C:\Shared\KAPLUNENKO\HWA\HWA.exe
+ 0CD00000 01/31/2000 05:00:00 C:\Program Files\Borland\CBuilder5\Bin\CG32.DLL
+ 41000000 01/31/2000 05:00:00 C:\Program
+ Files\Borland\CBuilder5\Bin\borlndmm.dll
+ 6E380000 03/23/2000 12:00:00 C:\WINNT\system32\INDICDLL.dll
+ 75950000 06/19/2003 09:05:04 C:\WINNT\system32\LZ32.DLL
+ 75E00000 06/19/2003 09:05:04 C:\WINNT\system32\IMM32.dll
+ 770F0000 08/23/2003 14:48:40 C:\WINNT\system32\RPCRT4.DLL
+ 777F0000 06/19/2003 09:05:04 C:\WINNT\system32\VERSION.DLL
+ 779B0000 06/19/2003 09:05:04 C:\WINNT\system32\OLEAUT32.DLL
+ 77A50000 08/23/2003 14:48:40 C:\WINNT\system32\OLE32.DLL
+ 77B50000 06/19/2003 09:05:04 C:\WINNT\system32\COMCTL32.DLL
+ 77E10000 03/24/2004 04:21:50 C:\WINNT\system32\USER32.DLL
+ 77F40000 03/23/2004 18:21:50 C:\WINNT\system32\GDI32.DLL
+ 77F80000 03/24/2004 04:21:56 C:\WINNT\system32\ntdll.dll
+ 79060000 03/24/2004 04:21:50 C:\WINNT\system32\ADVAPI32.DLL
+ 79430000 03/24/2004 04:21:56 C:\WINNT\system32\KERNEL32.DLL
+==========================================
